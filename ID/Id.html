@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="Id.css">
+  <title>Profile</title>
+</head>
+
+<body>
+<div class="container">
+  <div class="card">
+    <h2>Profile Page welcome</h2>
+    <hr>
+    <img id="saved-image" src="" alt="Saved Image">
+    
+    <h4>Name:
+      <script>
+        document.write(localStorage.getItem("name"));
+      </script>
+    </h4>
+    <h4>Phone Number:
+      <script>
+        document.write(localStorage.getItem("number"));
+      </script>
+    </h4>
+        <h4>Password:
+      <script>
+        document.write(localStorage.getItem("password"));
+      </script>
+    </h4>
+    <h4>Your email ID:
+      <script>
+        document.write(localStorage.getItem("email"));
+      </script>
+    </h4>
+  </div>
+</div>
+<script src="Id.js"></script>
+</body>
+
+</html>
