@@ -1,97 +1,90 @@
-* {
-      box-sizing: border-box;
-    }
-    .container {
-      margin-top: 30px;
-      text-align: center;
-    }
-    .tooltip {
-      position: relative; /* helps position the tooltip content */
-      border-bottom: 1px solid black;
-    }
-    .tooltip-content {
-      color: white;
-      background: black;
-      padding: 3px;
-      border-radius: 5px;
-      visibility: hidden; /* hides the tooltip content */
-    
-      /* positions the tooltip content */
-      position: absolute;
-      z-index: 1;
-      text-align: center;
-      width: 210px;
-      margin-left: -100px; /* (width / 2) x -1 */
-      left: 50%;
-      top: 150%; /* to the top */
-    }
-    .tooltip:hover > .tooltip-content {
-      visibility: visible; /* shows the tooltip content on mouse over */
-    }
-    .tooltip > .tooltip-content::after {
-      content: " ";
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border: 5px solid transparent;
-      border-bottom-color: black;
-    }
-    
-    
-    
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-    main {
-      flex: 1 0 auto;
-    }
-    footer {
-      color: #fff;
-      background: #333;
-      position: relative; /* required to position the copyright at the bottom */
-      font-size: 80%;
-    }
-    .footer-copyright {
-      width: 100%;
-      height: 40px;
-      background: #111;
-      /* positions the copyright at the bottom of the footer */
-      padding: 10px;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-    }
-    .footer-body {
-      margin-bottom: 40px;
-      padding: 30px;
-    }
-    .footer-body > div:first-child {
-      font-size: 150%;
-    }
-    .footer-body ul {
-      list-style-type: none;
-      margin: 0px;
-      padding: 0px;
-      text-align: center;
-    }
-    .footer-body li > a {
-      color: white;
-      text-decoration: none;
-      margin-bottom: 7px;
-    }
-    
-    
-    
-    
-    
-    
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+  
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.content{
+  text-align: center;
+}
+.content h1{
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.content h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+
