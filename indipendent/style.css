@@ -38,16 +38,16 @@ ul li{
 ul li img{
   position: absolute;
   height: 90%;
-  left: 30%;
+  left: 25%;
   transform: translateX(-50);
   animation: animate 25s linear infinite;
 }
 ul li h1{
   position: absolute;
-  width: 30%;
+  width: 20%;
   margin: 150px 0 0;
   padding: 0;
-  font-size: 5em;
+  font-size: 4em;
   text-align: right;
   text-transform: uppercase;
 }
@@ -55,7 +55,7 @@ ul li h1{
 ul li h2{
   position: absolute;
   right: 0;
-  width: 40%;
+  width: 46%;
   margin: 210px 0 0;
   padding: 0;
   font-size: 12em;
