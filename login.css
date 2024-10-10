@@ -76,11 +76,11 @@ body {
   font-size: 2em;
   color: #fff;
 }
-.login .inputBx {
+.login .form-group {
   position: relative;
-  width: 100%;
+  width: 50%;
 }
-.login .inputBx input {
+.login .form-group input {
   position: relative;
   width: 100%;
   padding: 12px 20px;
@@ -92,17 +92,17 @@ body {
   box-shadow: none;
   outline: none;
 }
-.login .inputBx input[type="submit"] {
+.login .text-center input[type="submit"] {
   width: 100%;
   background: #0078ff;
   background: linear-gradient(45deg, #ff357a, #fff172);
   border: none;
   cursor: pointer;
 }
-.login .inputBx input::placeholder {
+.login .text-center input::placeholder {
   color: rgba(255, 255, 255, 0.75);
 }
-.login .links {
+.login .reset {
   position: relative;
   width: 100%;
   display: flex;
@@ -110,7 +110,7 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-.login .links a {
+.login .reset a {
   color: #fff;
   text-decoration: none;
 }
