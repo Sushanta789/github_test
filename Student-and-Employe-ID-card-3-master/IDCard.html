@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+    <link rel="stylesheet" href="IDCard.css">
+    <title>ID Card</title>
+   
+</head>
+<body>
+  
+    <div class="container">
+        <div class="padding">
+        <div class="font">
+          
+            <div class="companyname">Planics<br><span class="tab">Solution</span></div>
+            
+            <div class="top">
+              
+.             <img id="saved-image" src="" alt="Saved Image">
+                
+            </div>
+            
+            <div class="">
+                <div class="ename">
+                <p class="p1"><b>
+                  
+                     <script>
+                          document.write(localStorage.getItem("name"));
+                        </script>
+                  
+                </b></p>
+                <p>Media Developer</p>
+                </div>
+                
+                
+                <div class="edetails">
+                    <P><b>Mobile No :</b>
+                    
+                    <script>
+                      document.write(localStorage.getItem("number"));
+                    </script>
+                    </P>
+                    <p><b>DOB :</b> 02/11/2020</p>
+                    <div class="Address"><b>Address : </b>223 par-1 hari soc, near main road ,L.H road surat ,L.H road </div>
+                    
+                </div>
+
+                <div class="signature">
+                    <img src="signature.png" alt="">
+                </div>
+
+                <div class="barcode">
+                    <img src="qr sample.png" alt="">
+                </div>
+                <div class="qr">
+                    <img src="barcode.png" alt="">
+                </div>
+
+          
+            </div>
+        </div>
+    </div>
+       
+    </div>
+    
+    
+    <script src="ID.js"></script>
+</body>
+</html>
