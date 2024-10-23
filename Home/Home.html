@@ -15,6 +15,12 @@
     
     <input type="checkbox" id="check">
     
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="video.mp4" type="video/mp4">
+             </video>
+    
+    
+    
     <label for="check">
       <i class="fas fa-bars" id="btn"></i>
       <i class="fas fa-times" id="cancel"></i>
@@ -23,10 +29,12 @@
     
     <div class="sidebar">
       
+            <video autoplay loop muted plays-inline class="back-video">
+                    <source src="Data.mp4" type="video/mp4">
+             </video>
       
       <header>Menu</header>
       
-     
       <a onclick="Id ()">
         <i class="profile"> </i>
       <span>Profile</span>
@@ -56,13 +64,16 @@
         <i class="fas fa-sliders-h"></i>
         <span>Services</span>
       </a>
-      <a href="#">
+      <a onclick="Contact ()">
         <i class="far fa-envelope"></i>
         <span>Contact</span>
       </a>
-    </div>
-</body>
     
+    </div>
+    
+    
+      <script src="Home.js"></script>
+</body>
   <div class="frame">
 <p> Responsive </p>
 <h2>SIDE BAR</h2>
@@ -70,6 +81,23 @@
 </div>  
 
 
+
+<script>
+  
+  function Id() {
+    window.location.href = "/Profile/Profile.html";
+  }
+  
+  
+  
+  
+  function Contact (){
+window.location.href="/Contact form to WhatsApp/whatsapp.html";
+}
+
+
+  
+</script>
 
 
 </html>

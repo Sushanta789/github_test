@@ -1,6 +1,6 @@
 function saveData() {
  
-  let name, email, password;
+  let name, number, email, password;
   name=document.getElementById("name").value;
   number=document.getElementById("number").value;
   email=document.getElementById("email").value;
@@ -35,21 +35,17 @@ else{
 
 
 
-const imageInput = document.getElementById('image-input');
-const imagePreview = document.getElementById('image-preview');
-const saveBtn = document.getElementById('save-btn');
-
-imageInput.addEventListener('change', (e) => {
-	const file = imageInput.files[0];
-	const reader = new FileReader();
-	reader.onload = (e) => {
-		imagePreview.src = e.target.result;
-	};
-	reader.readAsDataURL(file);
-});
-
-saveBtn.addEventListener('click', () => {
-	const imageData = imagePreview.src;
-	localStorage.setItem('image', imageData);
-	window.location.href="index.html";
-});
+function saveImage() {
+  const imageInput = document.getElementById("imageInput");
+  const image = imageInput.files[0];
+  const reader = new FileReader();
+  
+  reader.onload = function() {
+    const imageDataURL = reader.result;
+    localStorage.setItem("image", imageDataURL);
+    window.location.href = "index.html";
+  };
+  
+  reader.readAsDataURL(image);
+}
+	
