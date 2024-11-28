@@ -1,0 +1,8 @@
+body{
+  background-color: yellow;
+}
+div{
+  border: none;
+  height: 50px;
+  width: 300px;
+}
